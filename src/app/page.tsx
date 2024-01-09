@@ -1,7 +1,8 @@
 export default function Home() {
 	return (
 		<main>
-			<div>Hi! Everything is going to be alright!</div>
+			<div>Start creating...</div>
+			<div>"Simplicity is the ultimmate sophistication!" - LV</div>
 		</main>
 	)
 }

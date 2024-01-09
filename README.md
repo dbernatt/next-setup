@@ -1,3 +1,15 @@
+<div style="display:flex;">
+  <img src="./assets/vscode.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+    <img src="./assets/blackplus.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+  <img src="./assets/next.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+ <img src="./assets/blackplus.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+  <img src="./assets/eslint.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+  <img src="./assets/blackplus.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+  <img src="./assets/prettier.svg" alt="next.js" style="margin: 10px; padding: 10px;">
+</div>
+
+# Next.js setup with Eslint and Prettier
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
