@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"prepare": "husky install"
+		"postinstall": "husky install"
 	},
 	"dependencies": {
 		"next": "14.0.4",
@@ -25,8 +25,17 @@
 		"typescript": "^5"
 	},
 	"lint-staged": {
-		"*.{js,ts,tsx}": "eslint --cache --fix",
-		"*.{js,css,md,ts,tsx}": "prettier --write"
+		"**.{js|ts|cjs|mjs|d.cts|d.mts|jsx|tsx|json|jsonc}": [
+			"biome check --files-ignore-unknown=true",
+			"biome check --apply --no-errors-on-unmatched",
+			"biome check --apply --organize-imports-enabled=false --no-errors-on-unmatched",
+			"biome check --apply-unsafe --no-errors-on-unmatched",
+			"biome format --write --no-errors-on-unmatched",
+			"biome lint --apply --no-errors-on-unmatched"
+		],
+		"*": [
+			"biome check --no-errors-on-unmatched --files-ignore-unknown=true"
+		]
 	},
 	"packageManager": "yarn@4.0.2"
 }
