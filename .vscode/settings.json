@@ -1,8 +1,9 @@
 {
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
+		"quickfix.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
 	},
+	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
-	"prettier.tabWidth": 2,
-	"prettier.useTabs": true
+	"editor.insertSpaces": false
 }
